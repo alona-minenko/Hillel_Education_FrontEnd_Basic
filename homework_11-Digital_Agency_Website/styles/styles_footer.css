@@ -1,0 +1,117 @@
+.width-footer {
+    width: 100vw;
+}
+
+footer {
+    margin-top: 139px;
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 105px;
+}
+
+.first-a-footer {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+footer .nav-div {
+    max-width: 190px;
+}
+
+footer nav div p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 153%;
+    text-transform: capitalize;
+}
+
+footer nav div ul {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+footer .nav-li-first {
+    margin-top: 8px;
+}
+
+
+footer nav div ul li {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: capitalize;
+}
+
+.p-footer {
+    margin-top: 110px;
+    margin-bottom: 18px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+footer a {
+    transition: .3s ease-in;
+}
+
+footer a:hover {
+    text-shadow: 0 0 2px #2CAF8A;
+}
+
+
+
+
+
+/* @media */
+
+@media screen and (max-width:880px) {
+    footer nav {
+        column-gap: 40px;
+        row-gap: 72px;
+        justify-content: space-around;
+    }
+
+    footer nav div {
+        width: 50%;
+        text-align: center;
+    }
+
+    footer {
+        margin-top: 133px;
+    }
+}
+
+
+@media screen and (max-width:615px) {
+    footer {
+        margin-top: 128px;
+    }
+
+    .p-footer {
+        margin-top: 92px;
+        margin-bottom: 24px;
+    }
+}
+
+
+@media screen and (max-width:580px) {
+    footer nav {
+        flex-direction: column;
+        column-gap: 0px;
+        align-items: center;
+    }
+}
