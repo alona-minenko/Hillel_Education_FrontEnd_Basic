@@ -1,0 +1,41 @@
+*, html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: #272D38;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #FDFCFC;    
+}
+
+.main-wrapper {
+    margin: 0 auto;    
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.width-main-wrapper-footer {
+    width: 1440px;
+}
+
+
+
+
+
+
+
+
+/* @media */
+
+@media screen and (max-width:1470px) {
+    .width-main-wrapper-footer {
+        width: 100%;
+    }    
+}
+

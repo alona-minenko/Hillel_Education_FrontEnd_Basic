@@ -1,0 +1,201 @@
+header {
+    margin-top: 46px;
+    width: 1076px;
+}
+
+.logo-and-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.header-nav {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 153%;
+}
+
+
+.header-nav ul {
+    display: flex;
+    width: 404px;
+    justify-content: space-between;
+}
+
+.gradient-1 {
+    background-image: url('../images/Ellipse-1.png');
+    background-size: 679px 679px;
+    position: absolute;
+    width: 679px;
+    height: 679px;
+    top: 0px;
+    left: 0px;
+    z-index: -5;
+}
+
+
+.gradient-2 {
+    background-image: url('../images/Ellipse-2.png');
+    background-size: 500px 1000px;
+    position: absolute;
+    z-index: -5;
+    width: 500px;
+    height: 1000px;
+    top: 1020px;
+    right: 0px;
+}
+
+header a {
+    transition: .3s ease-in;
+}
+
+header a:hover {
+    text-shadow: 0 0 2px #2CAF8A;
+}
+
+.burger {
+    display: none;
+    width: 24px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burger div {
+    width: 24px;
+    height: 2px;
+    background: #272D38;
+}
+
+
+
+
+/* @media */
+
+@media screen and (max-width:1470px) {
+    header {
+        width: 74vw;
+    }
+}
+
+
+@media screen and (max-width:1100px) {
+    .header-nav ul {
+        width: 36.7vw;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .gradient-1 {
+        background-size: 579px 579px;
+        width: 579px;
+        height: 579px;
+    }
+
+    .gradient-2 {
+        background-size: 400px 900px;
+        width: 400px;
+        height: 900px;
+        top: 1520px;
+    }
+}
+
+
+@media screen and (max-width:880px) {
+    .burger {
+        display: flex;
+        cursor: pointer;
+    }
+
+    header {
+        position: relative;
+    }
+
+    .header-nav {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        display: none;
+    }
+
+    .menu-technical {
+        z-index: -5;
+        position: absolute;
+        width: 50px;
+        padding-bottom: 50px;
+        right: 0px;
+        top: 0px;
+    }
+
+
+    .menu-header {
+        display: none;
+        height: 175px;
+        background: rgb(142, 173, 213);
+        position: absolute;
+        border-radius: 8px;
+        right: 30px;
+        top: 10px;
+        flex-direction: column;
+        max-width: 150px;
+    }
+
+    .menu-header li {
+        padding: 8px 8px;
+
+    }
+
+    .menu-header li a {
+        color: white;
+    }
+
+    .burger:hover~.header-nav {
+        display: block;
+    }    
+}
+
+
+@media screen and (max-width:640px) {
+    .gradient-1 {
+        background-size: 449px 449px;
+        width: 449px;
+        height: 449px;
+    }
+
+    .gradient-2 {
+        background-size: 400px 900px;
+        width: 400px;
+        height: 900px;
+        top: 1520px;
+    }
+
+    .logo-name {
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: none;
+    }
+}
+
+
+@media screen and (max-width:490px) {
+    .gradient-1 {
+        background-size: 350px 350px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .gradient-2 {
+        background-size: 350px 800px;
+        width: 350px;
+        height: 800px;
+        top: 1520px;
+    }
+}
