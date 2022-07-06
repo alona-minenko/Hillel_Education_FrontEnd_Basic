@@ -1,0 +1,204 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: rgba(50, 50, 100, 0.7);
+}
+
+.form {
+  width: 650px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+  background: #F5F5FA;
+  box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
+  border-radius: 12px;
+}
+.form h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.form__input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form__input-text {
+  position: relative;
+}
+.form__input-text input {
+  padding: 15px;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  width: 590px;
+  transition: 0.2s ease-in;
+}
+.form__input-text input:hover {
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+}
+.form__input-text label {
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  color: #B3B3BA;
+}
+.form__input-text input:focus {
+  border: 2px solid #24A3FF;
+  outline: none;
+}
+.form__input-text input:focus + label {
+  color: #24A3FF;
+  top: -5px;
+  font-size: 12px;
+  background-color: white;
+  padding: 0 2px;
+  border-radius: 4px;
+}
+.form__input-text-message {
+  width: 450px;
+  height: 130px;
+}
+.form__input-text textarea {
+  resize: none;
+  width: 590px;
+  height: 130px;
+  padding: 15px;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  transition: 0.2s ease-in;
+}
+.form__input-text textarea:hover {
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+}
+.form__input-text textarea:focus {
+  border: 2px solid #24A3FF;
+  outline: none;
+}
+.form__input-text textarea:focus + label {
+  color: #24A3FF;
+  top: -5px;
+  font-size: 12px;
+  background-color: white;
+  padding: 0 2px;
+  border-radius: 4px;
+}
+.form__choice {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form__choice h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+}
+.form__choice label {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+}
+.form__choice p {
+  color: #B3B3BA;
+  font-weight: 400;
+  font-size: 16px;
+}
+.form__choice span {
+  background: white;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #24A3FF;
+  border-radius: 8px;
+  display: block;
+  transition: 0.2s ease-in;
+}
+.form__choice span:hover {
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+}
+.form__choice input {
+  display: none;
+}
+.form__choice input:checked + span {
+  background: #006CCF;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+}
+.form__subscribe {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.form__subscribe h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+}
+.form__subscribe span {
+  background: white;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #24A3FF;
+  border-radius: 8px;
+  display: block;
+  transition: 0.2s ease-in;
+}
+.form__subscribe span:hover {
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+}
+.form__subscribe input {
+  display: none;
+}
+.form__subscribe input:checked + span {
+  background: #F0145A;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+}
+.form__button {
+  padding: 18px 30px;
+  gap: 10px;
+  width: 590px;
+  height: 56px;
+  background: #24A3FF;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.form__button p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.form__button:hover {
+  background: #0085FF;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+}
+.form__button:active {
+  background: #006CCF;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+}
+
+/*# sourceMappingURL=styles.css.map */
