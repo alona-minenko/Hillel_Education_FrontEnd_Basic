@@ -38,6 +38,7 @@ body {
         flex-direction: column;
         gap: 15px;
 
+
         &-text {
             position: relative;            
         
@@ -66,8 +67,17 @@ body {
             input:focus {
                 border: 2px solid #24A3FF;
                 outline: none;
+            }             
+
+            input:valid+label {
+                color: #B3B3BA;
+                top: -5px;
+                font-size: 12px;
+                background-color: white;
+                padding: 0 2px;
+                border-radius: 4px;
             }
-    
+
             input:focus+label {
                 color: #24A3FF;
                 top: -5px;
@@ -99,6 +109,15 @@ body {
             textarea:focus {
                 border: 2px solid #24A3FF;
                 outline: none;
+            }            
+
+            textarea:valid+label {
+                color: #B3B3BA;
+                top: -5px;
+                font-size: 12px;
+                background-color: white;
+                padding: 0 2px;
+                border-radius: 4px;
             }
 
             textarea:focus+label {
@@ -161,7 +180,6 @@ body {
 
         input:checked + span {
             background: #006CCF;
-            box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
         }        
     }
 
@@ -181,13 +199,14 @@ body {
             color: #B3B3BA;
         }
 
-        span {            
+        span {    
+            display: grid;
+            place-content: center;
             background: white;
             width: 20px;
             height: 20px;
             border: 1px solid #24A3FF;
             border-radius: 8px;
-            display: block;
             transition: 0.2s ease-in;
         }
 
@@ -201,7 +220,7 @@ body {
 
         input:checked+span {
             background: #F0145A;
-            box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+
         }
     }
 

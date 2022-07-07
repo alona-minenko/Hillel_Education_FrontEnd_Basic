@@ -63,6 +63,14 @@ body {
   border: 2px solid #24A3FF;
   outline: none;
 }
+.form__input-text input:valid + label {
+  color: #B3B3BA;
+  top: -5px;
+  font-size: 12px;
+  background-color: white;
+  padding: 0 2px;
+  border-radius: 4px;
+}
 .form__input-text input:focus + label {
   color: #24A3FF;
   top: -5px;
@@ -90,6 +98,14 @@ body {
 .form__input-text textarea:focus {
   border: 2px solid #24A3FF;
   outline: none;
+}
+.form__input-text textarea:valid + label {
+  color: #B3B3BA;
+  top: -5px;
+  font-size: 12px;
+  background-color: white;
+  padding: 0 2px;
+  border-radius: 4px;
 }
 .form__input-text textarea:focus + label {
   color: #24A3FF;
@@ -139,7 +155,6 @@ body {
 }
 .form__choice input:checked + span {
   background: #006CCF;
-  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
 }
 .form__subscribe {
   display: flex;
@@ -155,12 +170,13 @@ body {
   color: #B3B3BA;
 }
 .form__subscribe span {
+  display: grid;
+  place-content: center;
   background: white;
   width: 20px;
   height: 20px;
   border: 1px solid #24A3FF;
   border-radius: 8px;
-  display: block;
   transition: 0.2s ease-in;
 }
 .form__subscribe span:hover {
@@ -171,7 +187,6 @@ body {
 }
 .form__subscribe input:checked + span {
   background: #F0145A;
-  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
 }
 .form__button {
   padding: 18px 30px;
